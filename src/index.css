@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.swiper-button-next {
+    padding-left: 20px;
+}
+
+.swiper-button-prev {
+    padding-right: 20px;
+}
+
+.swiper-button-disabled{
+    display: none;
+}
+
+@media(min-width: 520px) {
+
+    .swiper-button-prev {
+        padding-right: 15px;
+    }
+}
+
+@media(min-width: 800px) {
+
+    .swiper-button-next {
+        padding-left: 15px;
+    }
+}
