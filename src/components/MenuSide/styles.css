@@ -1,0 +1,48 @@
+.ptf-menu-side-container {
+    background: rgba(15, 15, 15, 0.990);
+    z-index: 999;
+}
+
+.ptf-menu-side {
+    width: 210px;
+    height: 100vh;
+}
+
+.ptf-menu-back {
+    padding: 17px 15px;
+    border-bottom: 1px solid;
+
+    box-shadow: 0 0 2px 0.5px;
+}
+
+.ptf-menu-back img {
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+.ptf-menu-side-itens {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.ptf-menu-side-itens li {
+    list-style: none;
+    padding: 20px 15px;
+    color: white;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid black;
+
+}
+
+@media(min-width: 520px) {
+    .ptf-menu-side {
+        width: 280px;
+
+    }
+}

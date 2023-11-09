@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 
 function App() {
 
@@ -6,8 +5,8 @@ function App() {
   return (
     <>
 
-      <Header />
-      </>
+      
+    </>
   )
 }
 
