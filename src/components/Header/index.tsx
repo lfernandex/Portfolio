@@ -1,4 +1,4 @@
-
+import MenuIcon from "../MenuIcon"
 import "./styles.css"
 
 
@@ -17,7 +17,7 @@ export default function Header() {
                                 </div>
 
                                 <div className="ptf-menu-icon">
-                                    
+                                    <MenuIcon />
                                 </div>
                             </div>
 
