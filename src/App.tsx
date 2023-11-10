@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe"
+import Certificate from "./components/Certificate"
 import Header from "./components/Header"
 import Home from "./components/Home"
 import Projects from "./components/Projects"
@@ -14,9 +15,10 @@ function App() {
       <Home />
 
       <AboutMe />
-      
+
       <Projects />
 
+      <Certificate />
     </>
   )
 }
