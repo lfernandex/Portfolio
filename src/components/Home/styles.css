@@ -1,0 +1,139 @@
+.ptf-home-section {
+    background-color: rgb(19, 19, 19);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.ptf-heigh {
+    width: 100%;
+}
+
+.ptf-center {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.ptf-ajustation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.ptf-description {
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ptf-name {
+    font-size: 30px;
+}
+
+.ptf-tech {
+    font-size: 18px;
+    color: #0f7db8;
+    text-shadow: 0 0 5px #0f7db8, 0 0 0 #0f7db8, 0 0 5px #0f7db8;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.ptf-tech::after {
+    content: " |";
+    position: relative;
+    top: -0.1em;
+
+    font-size: 20px;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ptf-icons-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 8px;
+}
+
+.ptf-icons-social a {
+    padding-right: 20px;
+}
+
+.ptf-icons-social img {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+.ptf-social-media{
+    padding: 20px;
+}
+.ptf-social-media img {
+    height: 400px;
+    width: 400px;
+}
+
+@media (min-width: 720px) {
+    .ptf-name {
+        font-size: 48px;
+    }
+
+    .ptf-tech {
+        font-size: 24px;
+        color: #0f7db8;
+        text-shadow: 0 0 5px #0f7db8, 0 0 0 #0f7db8, 0 0 5px #0f7db8;
+    }
+
+    .ptf-tech::after {
+        font-size: 34px;
+    }
+
+    .ptf-icons-social img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width:920px) {
+
+    .ptf-social-media {
+        display: none;
+    }
+
+    .ptf-tech {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ptf-icons-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
