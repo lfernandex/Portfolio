@@ -1,0 +1,89 @@
+
+.ptf-swiper-container {
+    max-width: 280px;
+    padding-bottom: 48px;
+}
+
+
+.swiper-slide {
+    flex-shrink: unset;
+}
+
+.ptf-project-card {
+    width: 200px;
+    padding: 20px;
+    border: 1px #0f7db8 solid;
+    background-color: rgb(27, 27, 27);
+}
+
+.ptf-project-card a {
+    text-decoration: none;
+}
+
+.ptf-project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ptf-project-icon img {
+    width: 150px;
+    height: 100px;
+}
+
+.ptf-details {
+    padding: 20px 0;
+    color: white;
+}
+
+.ptf-details h1 {
+    color: white;
+    font-size: 14px;
+}
+
+.ptf-details p {
+    padding-top: 16px;
+    font-size: 10px;
+}
+
+
+@media(min-width: 720px) {
+
+    .ptf-swiper-container {
+        max-width: 600px;
+    }
+
+    .swiper-slide {
+        flex-shrink: unset;
+        
+        display: flex;
+        max-width: 900px;
+    }
+
+    .ptf-project-card {
+        width: 300px;
+        height: 350px;
+    }
+
+    .ptf-project-icon img {
+        width: 240px;
+        height: 150px;
+    }
+
+    .ptf-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .ptf-details p {
+        font-size: 13px;
+    }
+
+    .swiper-button-next {
+        padding-left: 0;
+    }
+
+    .swiper-button-prev {
+        padding-right: 0;
+    }
+
+}
