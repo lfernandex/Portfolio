@@ -24,9 +24,6 @@
     justify-content: center;
     padding: 0;
     font-size: 10px;
-
-    
-
 }
 
 .ptf-ability-container-left-center {
@@ -46,6 +43,10 @@
     padding-top: 15px;
 }
 
+.ptf-database-display{
+    height: 110.031px;
+}
+
 .ptf-ability-icone h1 {
     padding-left: 5px;
     color: white;
@@ -59,12 +60,9 @@
     margin: 0;
 }
 
-.ptf-heigth-data-base {
-    padding-bottom: 54.008px;
-}
 
-.ptf-heit-lenguage {
-    padding-bottom: 7px;
+.ptf-lenguage-display{
+    height: 110.008px;
 }
 
 .ptf-size h1 {

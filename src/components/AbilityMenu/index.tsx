@@ -97,17 +97,17 @@ export default function AbilityMenu() {
         )}
 
         {value === 2 && (
-          <div className='ptf-heigth-data-base'>
+          <div className='ptf-container-data-base'>
             <div className='ptf-ability-container center'>
               <div className='ptf-ability-container-left-center'>
-                <div className='ptf-ability-icone'>
+                <div className='ptf-ability-icone ptf-database-display'>
                   <img src={mysql} alt="" />
                   <h1>MySQL</h1>
                 </div>
               </div>
 
               <div className='ptf-ability-container-rigth-center'>
-                <div className='ptf-ability-icone'>
+                <div className='ptf-ability-icone ptf-database-display'>
                   <img src={postgresql} alt="" />
                   <h1>PostgreSQL</h1>
                 </div>
@@ -118,10 +118,10 @@ export default function AbilityMenu() {
         )}
 
         {value === 3 && (
-          <div className='ptf-heit-lenguage ptf-size'>
+          <div className='ptf-heigth-lenguage ptf-size'>
             <div className='ptf-ability-container center'>
               <div className='ptf-ability-container-left-center'>
-                <div className='ptf-ability-icone'>
+                <div className='ptf-ability-icone ptf-lenguage-display'>
                   <h1>Português</h1>
                 </div>
               </div>
