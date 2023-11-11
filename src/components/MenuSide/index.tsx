@@ -7,9 +7,10 @@ type MenuSideProps = {
     handleCloseDialog: () => void;
 };
 
+
 export default function MenuSide({ handleCloseDialog }: MenuSideProps) {
     const menuSideRef = useRef<HTMLDivElement | null>(null);
-    
+
 
     const handleClickOutside = (event: MouseEvent) => {
         if (menuSideRef.current && !menuSideRef.current.contains(event.target as Node)) {
@@ -31,10 +32,12 @@ export default function MenuSide({ handleCloseDialog }: MenuSideProps) {
                     <img src={iconBack} onClick={handleCloseDialog} />
                 </div>
                 <ul className="ptf-menu-side-itens">
-                    <li>Inicio</li>
-                    <li>Sobre</li>
-                    <li>Projetos</li>
-                    <li>Habilidades</li>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#abouteme">Sobre mim</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#certificates">Certificados</a></li>
+                    <li><a href="#abilitys">Habilidades</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </div>
         </div>

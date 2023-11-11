@@ -11,7 +11,7 @@ export default function Home() {
 
     return (
         <>
-            <section className="ptf-home-section">
+            <section id="home" className="ptf-home-section">
                 <div className="ptf-heigh">
                     <div className="ptf-center">
                         <div className="ptf-organization ptf-ajustation ">

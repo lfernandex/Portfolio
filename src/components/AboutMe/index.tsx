@@ -3,7 +3,7 @@ import "./styles.css"
 export default function AboutMe() {
     return (
         <>
-            <section className="ptf-about-section">
+            <section id="abouteme" className="ptf-about-section">
                 <div className="ptf-about-card">
 
                     <div className="ptf-about-title">

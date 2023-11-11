@@ -1,0 +1,19 @@
+.ptf-footer-container{
+    background: rgb(10, 10, 10);
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ptf-footer-card{
+    text-align: center;
+    padding: 20px;
+}
+
+.ptf-footer-card h1{
+    color: white;
+    font-size: 14px;
+
+}

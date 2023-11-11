@@ -4,7 +4,7 @@
 }
 
 .ptf-menu-side {
-    width: 210px;
+    width: 200px;
     height: 100vh;
 }
 
@@ -33,11 +33,13 @@
     list-style: none;
     padding: 20px 15px;
     color: white;
-
-    font-weight: 700;
-
+    
     border-bottom: 1px solid black;
+}
 
+.ptf-menu-side-itens a{
+    color: white;
+    text-decoration: none;
 }
 
 @media(min-width: 520px) {
