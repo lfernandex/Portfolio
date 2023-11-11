@@ -1,0 +1,113 @@
+.ptf-ability-menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 30px;
+}
+
+.ptf-ability-box{
+    width: 300px;
+}
+
+.ptf-ability-menu-bakcground {
+    background-color: rgb(19, 19, 19);
+}
+
+.css-9z1bus-MuiButtonBase-root-MuiTab-root {
+    padding: 10px 0 !important;
+    font-size: 12px !important;
+}
+
+.ptf-ability-container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 10px;
+
+    
+
+}
+
+.ptf-ability-container-left-center {
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.ptf-ability-container-rigth-center {
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+
+.ptf-ability-icone {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.ptf-ability-icone h1 {
+    padding-left: 5px;
+    color: white;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.ptf-heigth-data-base {
+    padding-bottom: 54.008px;
+}
+
+.ptf-heit-lenguage {
+    padding-bottom: 7px;
+}
+
+.ptf-size h1 {
+    font-size: 14px;
+}
+
+
+@media (min-width: 800px) {
+    .ptf-ability-container-rigth-center {
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 900px) {
+
+
+    .ptf-ability-box{
+        width: 800px;
+    }
+    
+    .css-9z1bus-MuiButtonBase-root-MuiTab-root {
+        padding: 12px 20px !important;
+        font-size: 20px !important;
+        width: 200px;
+    }
+
+    .ptf-ability-container {
+        padding: 0;
+        font-size: 20px;
+    
+        padding-bottom: 30px;
+    
+    }
+
+    .ptf-ability-container-left-center {
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+    .ptf-size h1 {
+        font-size: 24px;
+    }
+
+
+}
+

@@ -1,3 +1,4 @@
+import AbilityMenu from "./components/AbilityMenu"
 import AboutMe from "./components/AboutMe"
 import Certificate from "./components/Certificate"
 import Header from "./components/Header"
@@ -19,6 +20,8 @@ function App() {
       <Projects />
 
       <Certificate />
+
+      <AbilityMenu />
     </>
   )
 }
