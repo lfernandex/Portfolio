@@ -38,10 +38,10 @@ export default function AbilityMenu() {
             aria-label="visible arrows tabs example"
             className='ptf-ability-menu-bakcground'
           >
-            <Tab label="FrontEnd" sx={{ color: 'white', fontWeight: '700'}} />
-            <Tab label="BackEnd" sx={{ color: 'white', fontWeight: '700' }} />
-            <Tab label="DataBase" sx={{ color: 'white', fontWeight: '700' }} />
-            <Tab label="Idioma" sx={{ color: 'white', fontWeight: '700' }} />
+            <Tab label="FrontEnd" translate="no" sx={{ color: 'white', fontWeight: '700'}} />
+            <Tab label="BackEnd" translate="no" sx={{ color: 'white', fontWeight: '700' }} />
+            <Tab label="DataBase" translate="no" sx={{ color: 'white', fontWeight: '700' }} />
+            <Tab label="Idioma" translate="no" sx={{ color: 'white', fontWeight: '700' }} />
           </Tabs>
         </Box>
 
@@ -50,24 +50,24 @@ export default function AbilityMenu() {
             <div className='ptf-ability-container-left-center'>
               <div className='ptf-ability-icone'>
                 <img src={javaScript} alt="" />
-                <h1>JavaScript</h1>
+                <h1 translate="no">JavaScript</h1>
               </div>
 
               <div className='ptf-ability-icone'>
                 <img src={react} alt="" />
-                <h1>React</h1>
+                <h1 translate="no">React</h1>
               </div>
             </div>
 
             <div className='ptf-ability-container-left-center'>
               <div className='ptf-ability-icone'>
                 <img src={html} alt="" />
-                <h1>HTML</h1>
+                <h1 translate="no">HTML</h1>
               </div>
 
               <div className='ptf-ability-icone'>
                 <img src={css} alt="" />
-                <h1>CSS</h1>
+                <h1 translate="no">CSS</h1>
               </div>
             </div>
           </div>
@@ -78,19 +78,19 @@ export default function AbilityMenu() {
             <div className='ptf-ability-container-left-center'>
               <div className='ptf-ability-icone'>
                 <img src={spring} alt="" />
-                <h1>Spring Boot</h1>
+                <h1 translate="no">Spring Boot</h1>
               </div>
 
               <div className='ptf-ability-icone'>
                 <img src={apiRest} alt="" />
-                <h1>API Rest</h1>
+                <h1 translate="no">API Rest</h1>
               </div>
             </div>
 
             <div className='ptf-ability-container-rigth-center'>
               <div className='ptf-ability-icone'>
                 <img src={java} alt="" />
-                <h1>Java</h1>
+                <h1 translate="no">Java</h1>
               </div>
             </div>
           </div>
@@ -102,14 +102,14 @@ export default function AbilityMenu() {
               <div className='ptf-ability-container-left-center'>
                 <div className='ptf-ability-icone ptf-database-display'>
                   <img src={mysql} alt="" />
-                  <h1>MySQL</h1>
+                  <h1 translate="no">MySQL</h1>
                 </div>
               </div>
 
               <div className='ptf-ability-container-rigth-center'>
                 <div className='ptf-ability-icone ptf-database-display'>
                   <img src={postgresql} alt="" />
-                  <h1>PostgreSQL</h1>
+                  <h1 translate="no">PostgreSQL</h1>
                 </div>
               </div>
             </div>
@@ -122,13 +122,13 @@ export default function AbilityMenu() {
             <div className='ptf-ability-container center'>
               <div className='ptf-ability-container-left-center'>
                 <div className='ptf-ability-icone ptf-lenguage-display'>
-                  <h1>Português</h1>
+                  <h1 translate="no">Português</h1>
                 </div>
               </div>
 
               <div className='ptf-ability-container-rigth-center'>
                 <div className='ptf-ability-icone'>
-                  <h1>Inglês</h1>
+                  <h1 translate="no">Inglês</h1>
                 </div>
               </div>
             </div>
