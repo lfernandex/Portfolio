@@ -82,6 +82,9 @@
 
     .ptf-ability-box{
         width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .css-9z1bus-MuiButtonBase-root-MuiTab-root {
