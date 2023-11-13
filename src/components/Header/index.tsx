@@ -13,7 +13,7 @@ export default function Header() {
                         <div className="ptf-menu-bar">
                             <div className="ptf-header-icon">
                                 <div className="ptf-icon">
-                                    <h1> L.F  DEV </h1>
+                                    <h1 translate="no"> L.F  DEV </h1>
                                 </div>
 
                                 <div className="ptf-menu-icon">
