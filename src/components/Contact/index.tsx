@@ -2,6 +2,7 @@ import { useState } from "react";
 import ContactSuccess from "../ContactSuccess";
 import "./styles.css";
 
+import axios from "axios";
 import github from "../../assets/Icons/Github.svg";
 import instagram from "../../assets/Icons/Instagram.svg";
 import linkedin from "../../assets/Icons/Linkedin.svg";
@@ -19,13 +20,7 @@ export default function Contact() {
 
     const [formData, setFormData] = useState(initialState);
 
-    const handleSubmit = async (event: any) => {
-        event.preventDefault();
 
-        setFormData(initialState);
-
-        setSuccessOpen(true);
-    };
 
     const handleSnackbarClose = () => {
         setSuccessOpen(false);
@@ -37,6 +32,28 @@ export default function Contact() {
             ...prevData,
             [name]: value,
         }));
+    };
+
+    const handleSubmit = async (event: any) => {
+        event.preventDefault();
+
+        try {
+            await enviarDadosParaAPI(formData);
+
+            setFormData(initialState);
+
+            setSuccessOpen(true);
+        } catch (error) {
+            console.error('Erro ao enviar dados para a API', error);
+        }
+    };
+
+    const enviarDadosParaAPI = async (data: any) => {
+
+        const response = await axios.post('https://formsubmit.co/e7c8476beae1b89e3d41a0b5541499c8', data);
+        if (response.status !== 200) {
+            throw new Error('Erro ao enviar dados para a API');
+        }
     };
 
     return (
@@ -107,18 +124,14 @@ export default function Contact() {
                         <div className="ptf-contact-form-card">
                             <div className="ptf-contact-form-center">
                                 <form
-                                    action="https://api.staticforms.xyz/submit"
-                                    method="post"
+                                    action="https://formsubmit.co/e7c8476beae1b89e3d41a0b5541499c8"
+                                    method="POST"
                                     className="ptf-contact-form"
                                     onSubmit={handleSubmit}
                                 >
                                     <div className="ptf-contact-form-data">
 
-                                        <input
-                                            type="hidden"
-                                            name="accessKey"
-                                            value="0b592de0-046c-4aaf-9a83-b8cf7a438876"
-                                        />
+
                                         <label>Nome</label>
                                         <input
                                             type="text"
