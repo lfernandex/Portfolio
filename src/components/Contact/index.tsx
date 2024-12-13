@@ -50,7 +50,7 @@ export default function Contact() {
 
     const enviarDadosParaAPI = async (data: any) => {
 
-        const response = await axios.post('https://formsubmit.co/e7c8476beae1b89e3d41a0b5541499c8', data);
+        const response = await axios.post('https://formsubmit.co/el/gosoto', data);
         if (response.status !== 200) {
             throw new Error('Erro ao enviar dados para a API');
         }
@@ -123,15 +123,8 @@ export default function Contact() {
                     <div className="ptf-contact-form-container">
                         <div className="ptf-contact-form-card">
                             <div className="ptf-contact-form-center">
-                                <form
-                                    action="https://formsubmit.co/e7c8476beae1b89e3d41a0b5541499c8"
-                                    method="POST"
-                                    className="ptf-contact-form"
-                                    onSubmit={handleSubmit}
-                                >
+                                <form className="ptf-contact-form" onSubmit={handleSubmit}>
                                     <div className="ptf-contact-form-data">
-
-
                                         <label>Nome</label>
                                         <input
                                             type="text"
@@ -152,7 +145,7 @@ export default function Contact() {
                                         />
                                         <label>Email</label>
                                         <input
-                                            type="text"
+                                            type="email"
                                             name="email"
                                             value={formData.email}
                                             onChange={handleChange}
@@ -167,14 +160,13 @@ export default function Contact() {
                                             cols={30}
                                             rows={10}
                                             placeholder="Digite sua mensagem"
+                                            required
                                         ></textarea>
-
                                     </div>
 
                                     <button className="ptf-form-button" type="submit">
                                         <p>Enviar</p>
                                     </button>
-
                                 </form>
                             </div>
                             <ContactSuccess open={successOpen} onClose={handleSnackbarClose} />
