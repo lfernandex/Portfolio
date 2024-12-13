@@ -34,7 +34,7 @@ export default function CustomizedSnackbars({ open, onClose }: CustomizedSnackba
         <ThemeProvider theme={theme}>
             <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                    Obrigado pelo contato! Retornaremos em breve!
+                    Obrigado pelo contato! Retornarei em breve!
                 </Alert>
             </Snackbar>
         </ThemeProvider>
