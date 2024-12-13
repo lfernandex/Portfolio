@@ -123,7 +123,12 @@ export default function Contact() {
                     <div className="ptf-contact-form-container">
                         <div className="ptf-contact-form-card">
                             <div className="ptf-contact-form-center">
-                                <form className="ptf-contact-form" onSubmit={handleSubmit}>
+                            <form
+                                    action="https://formsubmit.co/el/gosoto"
+                                    method="POST"
+                                    className="ptf-contact-form"
+                                    onSubmit={handleSubmit}
+                                >
                                     <div className="ptf-contact-form-data">
                                         <label>Nome</label>
                                         <input
@@ -145,7 +150,7 @@ export default function Contact() {
                                         />
                                         <label>Email</label>
                                         <input
-                                            type="email"
+                                            type="text"
                                             name="email"
                                             value={formData.email}
                                             onChange={handleChange}
@@ -160,14 +165,13 @@ export default function Contact() {
                                             cols={30}
                                             rows={10}
                                             placeholder="Digite sua mensagem"
-                                            required
                                         ></textarea>
                                     </div>
 
                                     <button className="ptf-form-button" type="submit">
                                         <p>Enviar</p>
                                     </button>
-                                </form>
+                                </form> 
                             </div>
                             <ContactSuccess open={successOpen} onClose={handleSnackbarClose} />
                         </div>
