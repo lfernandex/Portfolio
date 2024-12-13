@@ -67,7 +67,6 @@ export default function AboutMe() {
                     </div>
                     <div className="ptf-about-description">
                         <p>
-
                             Minha jornada começou com a automação de testes web
                             e meu primeiro encontro com a programação foi através
                             do Java. <br />
@@ -75,15 +74,15 @@ export default function AboutMe() {
                             Em 2022, mergulhei de cabeça na aprendizagem dessa
                             linguagem, o que me fez perceber a vastidão do mundo
                             do desenvolvimento. Desde então, tenho direcionado
-                            meu foco principalmente para o desenvolvimento back-end,
-                            incluindo a criação de APIs com e sem conexões a bancos
-                            de dados.
+                            meu foco principalmente para o desenvolvimento back-end.
                             <br />
                             <br />
-                            Atualmente, estou matriculado no curso de Análise e
-                            Desenvolvimento de Sistemas, e continuo aprimorando
-                            minhas habilidades através de cursos específicos na
-                            área de desenvolvimento web.
+                            Atualmente, estou matriculado no curso de Análise e 
+                            Desenvolvimento de Sistemas e continuo aprimorando 
+                            minhas habilidades através de cursos específicos na 
+                            área de back-end. Além disso, estou estagiando na F1rst Digital Services, 
+                            onde tenho a oportunidade de aplicar meus conhecimentos em projetos reais 
+                            e colaborar com uma equipe dinâmica, enriquecendo minha experiência na área. 
                         </p>
                     </div>
 
