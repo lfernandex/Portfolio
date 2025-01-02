@@ -41,7 +41,7 @@ export default function Home() {
 
 
 
-                                        <a href="https://instagram.com/lfernande_s"
+                                        <a href="https://instagram.com/lbotelh_"
                                             target="_blank">
                                             <img src={instagram} alt="" />
                                         </a>
