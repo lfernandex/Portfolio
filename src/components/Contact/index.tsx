@@ -77,7 +77,7 @@ export default function Contact() {
                             <div className="ptf-more-contact">
                                 <div>
                                     <h1> Email para contato</h1>
-                                    <h4>luscafernandes027@gmail.com</h4>
+                                    <h4>contatolucasfernandesbotelho@gmail.com</h4>
                                 </div>
 
                             </div>
