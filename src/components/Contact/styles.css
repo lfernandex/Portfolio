@@ -22,96 +22,6 @@
     font-size: 20px;
 }
 
-
-@media(min-width: 720px) {
-
-    .ptf-contact-title h1 {
-        font-size: 30px;
-    }
-
-}
-
-.ptf-contact-form-center {
-    max-width: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.ptf-contact-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 20px 20px 20px;
-}
-
-.ptf-contact-form-data {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-.ptf-contact-form-data label {
-    color: white;
-    padding: 10px 0 5px 0;
-    font-size: 14px;
-    max-width: 700px;
-    width: 100%;
-}
-
-.ptf-contact-form-data input {
-    background-color: rgb(18, 18, 18);
-    color: #0f7db8;
-    border: solid 2px #0f7db8;
-    padding: 10px;
-    width: 100%;
-    outline: none;
-    font-size: 14px;
-}
-
-.ptf-contact-form-data input:hover {
-    box-shadow: 0 0 5px 1px;
-}
-
-.ptf-contact-form-data textarea {
-    background-color: rgb(18, 18, 18);
-    color: #0f7db8;
-    border: 1px solid #0f7db8;
-    font-size: 14px;
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    resize: none;
-}
-
-.ptf-contact-form-data textarea:hover {
-    box-shadow: 0 0 5px 1px;
-}
-
-.ptf-form-button {
-    width: 100%;
-    padding: 10px;
-
-    background: transparent;
-    border: 1px solid #0f7db8;
-
-    color: #0f7db8;
-    font-weight: 700;
-}
-
-.ptf-form-button p {
-    color: white;
-}
-
-.ptf-form-button:hover {
-    box-shadow: 0 0 5px 1px;
-}
-
-
 .ptf-more-contact {
     display: flex;
 
@@ -166,11 +76,6 @@
 
 @media (min-width: 400px) {
 
-    .ptf-contact-form-data {
-        max-width: 300px;
-        width: 300px;
-    }
-
     .ptf-social-card {
         display: flex;
         justify-content: center;
@@ -180,14 +85,17 @@
 
 @media (min-width:520px) {
 
-    .ptf-contact-form-data {
-        max-width: 400px;
-        width: 400px;
-    }
-
     .ptf-social-card-contact{
         display: flex;
     }
+}
+
+@media(min-width: 720px) {
+
+    .ptf-contact-title h1 {
+        font-size: 20px;
+    }
+
 }
 
 @media (min-width:900px) {
@@ -198,21 +106,8 @@
 
     }
 
-    .ptf-contact-form-data {
-        max-width: 500px;
-        width: 500px;
-    }
-
-    .ptf-contact-form-data label {
-        font-size: 20px;
-    }
-
-    .ptf-contact-form-data input {
-        font-size: 18px;
-    }
-
-    .ptf-contact-form-data textarea {
-        font-size: 18px;
+    .ptf-contact-title h1 {
+        font-size: 40px;
     }
 
     .ptf-card-more-contact {
@@ -220,7 +115,7 @@
     }
 
     .ptf-card-more-contact h1 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .ptf-card-more-contact h4 {
@@ -228,7 +123,7 @@
     }
 
     .ptf-social-card-contact{
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .ptf-social-card {
@@ -244,16 +139,13 @@
     }
 
     .ptf-social-contact img {
-        width: 50px;
-        height: 50px;
-
+        width: 48px;
+        height: 48px;
     }
 
     .ptf-social-contact a {
         font-size: 20px;
-        padding-left: 20px;
-
-
+        padding-left: 10px;
     }
 
     .ptf-contact-form-container {

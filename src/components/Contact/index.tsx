@@ -121,60 +121,6 @@ export default function Contact() {
                         </svg>
                     </div>
                     <div className="ptf-contact-form-container">
-                        <div className="ptf-contact-form-card">
-                            <div className="ptf-contact-form-center">
-                            <form
-                                    action="https://formsubmit.co/el/gosoto"
-                                    method="POST"
-                                    className="ptf-contact-form"
-                                    onSubmit={handleSubmit}
-                                >
-                                    <div className="ptf-contact-form-data">
-                                        <label>Nome</label>
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            placeholder="Digite seu nome"
-                                            required
-                                        />
-                                        <label>Assunto</label>
-                                        <input
-                                            type="text"
-                                            name="subject"
-                                            value={formData.subject}
-                                            onChange={handleChange}
-                                            placeholder="Digite o assunto"
-                                            required
-                                        />
-                                        <label>Email</label>
-                                        <input
-                                            type="text"
-                                            name="email"
-                                            value={formData.email}
-                                            onChange={handleChange}
-                                            placeholder="Digite seu email"
-                                            required
-                                        />
-                                        <label>Mensagem</label>
-                                        <textarea
-                                            name="message"
-                                            value={formData.message}
-                                            onChange={handleChange}
-                                            cols={30}
-                                            rows={10}
-                                            placeholder="Digite sua mensagem"
-                                        ></textarea>
-                                    </div>
-
-                                    <button className="ptf-form-button" type="submit">
-                                        <p>Enviar</p>
-                                    </button>
-                                </form> 
-                            </div>
-                            <ContactSuccess open={successOpen} onClose={handleSnackbarClose} />
-                        </div>
 
                         <div className="ptf-card-more-contact">
                             <div className="ptf-more-contact">
@@ -188,8 +134,8 @@ export default function Contact() {
                                 <div className="ptf-social-card-contact">
                                     <div className="ptf-social-contact">
                                         <img src={instagram} alt="" />
-                                        <a href="https://www.instagram.com/lfernande_s"
-                                            target="_blank"><h1>@lfernande_s</h1></a>
+                                        <a href="https://www.instagram.com/lbotelh_"
+                                            target="_blank"><h1>@lbotelh_</h1></a>
                                     </div>
                                     <div className="ptf-social-contact">
                                         <img src={linkedin} alt="" />
