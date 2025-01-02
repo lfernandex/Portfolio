@@ -1,60 +1,11 @@
-import { useState } from "react";
-import ContactSuccess from "../ContactSuccess";
+
 import "./styles.css";
 
-import axios from "axios";
 import github from "../../assets/Icons/Github.svg";
 import instagram from "../../assets/Icons/Instagram.svg";
 import linkedin from "../../assets/Icons/Linkedin.svg";
 
-const initialState = {
-    name: '',
-    subject: '',
-    email: '',
-    message: '',
-};
-
 export default function Contact() {
-
-    const [successOpen, setSuccessOpen] = useState(false);
-
-    const [formData, setFormData] = useState(initialState);
-
-
-
-    const handleSnackbarClose = () => {
-        setSuccessOpen(false);
-    };
-
-    const handleChange = (event: any) => {
-        const { name, value } = event.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
-    };
-
-    const handleSubmit = async (event: any) => {
-        event.preventDefault();
-
-        try {
-            await enviarDadosParaAPI(formData);
-
-            setFormData(initialState);
-
-            setSuccessOpen(true);
-        } catch (error) {
-            console.error('Erro ao enviar dados para a API', error);
-        }
-    };
-
-    const enviarDadosParaAPI = async (data: any) => {
-
-        const response = await axios.post('https://formsubmit.co/el/gosoto', data);
-        if (response.status !== 200) {
-            throw new Error('Erro ao enviar dados para a API');
-        }
-    };
 
     return (
 
